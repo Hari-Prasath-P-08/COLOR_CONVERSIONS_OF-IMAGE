@@ -41,8 +41,8 @@ Split and merge HSV Image
 
 ### i) Read and display the image
 
+```python
 <br>
-```
 import cv2
 import matplotlib.pyplot as plt
 img=cv2.imread("GSLV - Mark III.png",1)
@@ -50,8 +50,8 @@ cv2.imshow("display window",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 print(img.shape)
-```
 <br>
+```
 
 ### Output:
 
@@ -60,15 +60,15 @@ print(img.shape)
 
 ### ii)Write the image
 
-<br>
 ```python
+<br>
 img1=cv2.imread("GSLV - Mark III.png",0)
 cv2.imshow("display window",img1)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 cv2.imwrite('greyscale.jpeg',img1)
-```
 <br>
+```
 
 ### Output:
 
@@ -77,13 +77,13 @@ cv2.imwrite('greyscale.jpeg',img1)
 
 ### iii)Shape of the Image
 
-<br>
 ```python
+<br>
 import cv2
 img1=cv2.imread("GSLV - Mark III.png",1)
 print(img1.shape)
-```
 <br>
+```
 
 ### Output:
 
@@ -91,8 +91,9 @@ print(img1.shape)
 
 
 ### iv)Access rows and columns
-<br>
+
 ```python
+<br>
 import random
 import cv2
 image=cv2.imread('GSLV - Mark III.png',1)
@@ -104,8 +105,8 @@ for i in range (150,200):
 cv2.imshow('part image',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
@@ -113,8 +114,9 @@ cv2.destroyAllWindows()
 
 
 ### v)Cut and paste portion of image
-<br>
+
 ```python
+<br>
 import cv2
 img2 = cv2.imread("GSLV - Mark III.png")
 x = 0
@@ -128,8 +130,8 @@ cv2.imshow("Original Image", img2)
 cv2.imshow("Cropped Image", cropimg)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
@@ -138,8 +140,9 @@ cv2.destroyAllWindows()
 
 
 ### vi) BGR and RGB to HSV and GRAY
-<br>
+
 ```python
+<br>
 import cv2
 img = cv2.imread('GSLV - Mark III.png',1)
 img = cv2.resize(img,(300,200))
@@ -154,8 +157,8 @@ gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
@@ -167,8 +170,9 @@ cv2.destroyAllWindows()
 
 
 ### vii) HSV to RGB and BGR
-<br>
+
 ```python
+<br>
 import cv2
 img = cv2.imread('GSLV - Mark III.png')
 img = cv2.resize(img,(300,200))
@@ -180,8 +184,8 @@ BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
 cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
@@ -191,8 +195,9 @@ cv2.destroyAllWindows()
 
 
 ### viii) RGB and BGR to YCrCb
-<br>
+
 ```python
+<br>
 import cv2
 img = cv2.imread('GSLV - Mark III.png')
 img = cv2.resize(img,(300,200))
@@ -203,8 +208,8 @@ YCrCb2 = cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
 cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
@@ -214,8 +219,9 @@ cv2.destroyAllWindows()
 
 
 ### ix) Split and merge RGB Image
-<br>
+
 ```python
+<br>
 import cv2
 img = cv2.imread('GSLV - Mark III.png',1)
 img = cv2.resize(img,(300,200))
@@ -229,8 +235,8 @@ merged = cv2.merge((B,G,R))
 cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
@@ -241,8 +247,9 @@ cv2.destroyAllWindows()
 
 
 ### x) Split and merge HSV Image
-<br>
+
 ```python
+<br>
 import cv2
 img = cv2.imread("GSLV - Mark III.png",1)
 img = cv2.resize(img,(300,200))
@@ -255,8 +262,8 @@ merged = cv2.merge((H,S,V))
 cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-```
 <br>
+```
 
 ### Output:
 
