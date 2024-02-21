@@ -42,7 +42,7 @@ Split and merge HSV Image
 ### i) Read and display the image
 
 <br>
-```python
+```
 import cv2
 import matplotlib.pyplot as plt
 img=cv2.imread("GSLV - Mark III.png",1)
